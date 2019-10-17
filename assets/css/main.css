@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap);
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+a, input {
+  color: unset;
+}
+a:hover, input:hover {
+  color: unset;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a:hover {
+  color: unset;
+}
+a.text-yellow:hover {
+  color: #FFD700;
+}
+a.text-white:hover {
+  color: white;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-yellow {
+  color: #FFD700;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: #4585C6;
+}
+
+@media screen and (min-width: 768px) {
+  .home__container {
+    height: 100vh;
+  }
+  .home__container .row {
+    height: 100%;
+  }
+}
+
+.home__content-col {
+  background: url(../img/bg-img.jpg) center center/cover no-repeat;
+}
+
+.home__content {
+  padding: 40px 0 40px;
+}
+@media screen and (min-width: 768px) {
+  .home__content {
+    height: fit-content;
+    margin: auto 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home__content {
+    padding: 0 8vw;
+  }
+}
+
+.home__logo {
+  width: 210px;
+  height: 102px;
+  font-size: 0;
+  background: url(../img/logo.svg) center center/contain no-repeat;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .home__logo {
+    margin-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home__logo {
+    margin-left: -45px;
+  }
+}
+
+.home__title {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+.home__sub-title {
+  font-size: 26px;
+  font-size: 1.625rem;
+  margin-bottom: 20px;
+}
+
+.home__social__box {
+  margin-top: 60px;
+}
+.home__social__box a {
+  display: block;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .home__social__box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 470px;
+  }
+}
+
+.home__whatsapp-btn {
+  padding: 12px 23px 12px 53px;
+  background-color: #1DD33D;
+  border-radius: 3px;
+  width: fit-content;
+  position: relative;
+  font-weight: 700;
+  color: white;
+}
+.home__whatsapp-btn:hover {
+  background-color: #4585C6;
+  text-decoration: none;
+  color: white;
+}
+.home__whatsapp-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 23px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-whatsapp.svg) center center/contain no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .home__instagram-link {
+    line-height: 46px;
+    vertical-align: middle;
+    margin-left: 30px;
+  }
+}
+
+.home__form-content {
+  padding: 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .home__form-content {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home__form-content {
+    padding: 0 8vw;
+  }
+}
+
+.home__form-title {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.home__form-box label {
+  color: white;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  width: 100%;
+  color: white !important;
+  background-color: unset;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 13px 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.form-field::-webkit-input-placeholder {
+  color: white !important;
+}
+.form-field:-moz-placeholder {
+  color: white !important;
+}
+.form-field::-moz-placeholder {
+  color: white !important;
+}
+.form-field:-ms-input-placeholder {
+  color: white !important;
+}
+
+.form-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-submit {
+  padding: 12px 23px;
+  background-color: #FFD700;
+  border-radius: 3px;
+  width: fit-content;
+  position: relative;
+  font-weight: 700;
+  color: #5D636F;
+  margin-left: auto;
+  display: block;
+  outline: none;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: #4585C6;
+}
+
+.ajax-loader {
+  display: none !important;
+}
+
+.form-safe {
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  position: relative;
+  padding-left: 30px;
+  height: fit-content;
+  margin: auto auto auto 0;
+}
+.form-safe::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 22px;
+  background: url(../img/icon-safe.svg) center center/contain no-repeat;
+}
+
+.wpcf7-mail-sent-ok, .wpcf7-validation-errors {
+  color: white !important;
+  border: none !important;
+}
+
+/*# sourceMappingURL=main.css.map */

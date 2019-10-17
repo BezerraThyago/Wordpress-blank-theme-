@@ -1,0 +1,50 @@
+@function calculateRem($size)
+	$remSize: $size / 16px
+	@return #{$remSize}rem
+
+=font-size($size)
+	font-size: $size //Fallback in px
+	font-size: calculateRem($size)
+
+=placeholder-color($placeholder-color) 
+	&::-webkit-input-placeholder 
+		color: $placeholder-color !important
+
+	&:-moz-placeholder 
+		color: $placeholder-color !important
+
+	&::-moz-placeholder 
+		color: $placeholder-color !important
+
+	&:-ms-input-placeholder 
+		color: $placeholder-color !important
+
+=link-color($normal-color, $hover-color)
+	color: $normal-color !important
+
+	&:hover
+		color: $hover-color !important
+
+=font-extra-light
+	font-weight: 200
+
+=font-light
+	font-weight: 300
+
+=font-regular
+	font-weight: 400
+
+=font-medium
+	font-weight: 500
+
+=font-semi-bold
+	font-weight: 600
+
+=font-bold
+	font-weight: 700
+
+=font-extra-bold
+	font-weight: 800
+
+=font-black
+	font-weight: 900

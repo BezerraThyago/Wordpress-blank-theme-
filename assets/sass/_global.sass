@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap)
+@import ./mixins
+@import ./variables
+
+body
+    +font-size(16px)
+    font-family: Montserrat, sans-serif
+    +font-regular
+
+ul
+    padding: 0px
+    list-style: none
+    margin: 0px
+
+a, input
+    color: unset
+
+    &:hover
+        color: unset
+
+img
+    width: 100%
+    height: auto
+    display: block
+
+a
+    &:hover
+        color: unset
+
+
+    &.text-yellow
+        &:hover
+            color: $yellow
+
+    &.text-white
+        &:hover
+            color: $white
+
+
+.text-bold
+    +font-bold
+    
+.text-yellow
+    color: $yellow
+
+.text-white
+    color: $white
+
+.bg-blue
+    background-color: $blue

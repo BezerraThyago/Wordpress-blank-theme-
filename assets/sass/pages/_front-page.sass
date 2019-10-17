@@ -1,0 +1,175 @@
+@import "../mixins"
+@import "../variables"
+
+.home__container
+    @media screen and(min-width: 768px)
+        height: 100vh
+
+        .row
+            height: 100%
+
+
+.home__content-col
+    background: url(../img/bg-img.jpg) center center / cover no-repeat
+
+.home__content
+    padding: 40px 0 40px
+
+    @media screen and(min-width: 768px)
+        height: fit-content
+        margin: auto 0 
+
+
+    @media screen and(min-width: 1200px)
+        padding: 0 8vw
+
+
+
+.home__logo
+    width: 210px
+    height: 102px
+    font-size: 0
+    background: url(../img/logo.svg) center center / contain no-repeat
+    margin-bottom: 40px
+
+    @media screen and(min-width: 768px)
+        margin-bottom: 90px
+
+    @media screen and(min-width: 1200px)
+        margin-left: -45px
+        
+
+.home__title
+    +font-size(30px)    
+    
+
+.home__sub-title
+    +font-size(26px)
+    margin-bottom: 20px
+
+
+.home__social__box
+    margin-top: 60px
+
+    a
+        display: block
+        margin-bottom: 15px
+
+    @media screen and(min-width: 1200px)
+        display: flex
+        flex-wrap: wrap
+        max-width: 470px
+
+.home__whatsapp-btn
+    padding: 12px 23px 12px 53px
+    background-color: #1DD33D
+    border-radius: 3px
+    width: fit-content
+    position: relative
+    +font-bold
+    color: $white
+
+
+    &:hover
+        background-color: $blue
+        text-decoration: none
+        color: white
+    
+    &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 23px
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        background: url(../img/icon-whatsapp.svg) center center / contain no-repeat
+
+
+.home__instagram-link
+    @media screen and(min-width: 1200px)
+        line-height: 46px
+        vertical-align: middle
+        margin-left: 30px
+
+
+.home__form-content
+    padding: 40px 0
+
+    @media screen and(min-width: 768px)
+        margin: auto
+
+    @media screen and(min-width: 1200px)
+        padding: 0 8vw
+
+.home__form-title
+    +font-size(16px)
+    margin-bottom: 30px
+
+
+.home__form-box
+    label
+        color: white
+        +font-size(14px)
+        margin-bottom: 15px
+
+.form-field
+    width: 100%
+    color: $white !important
+    background-color: unset
+    +font-size(14px)
+    padding: 13px 20px
+    border: 1px solid $white
+    border-radius: 3px
+    margin-bottom: 15px
+    +placeholder-color($white)
+    outline: none
+
+
+.form-footer
+    display: flex
+    flex-wrap: wrap
+
+
+.btn-submit
+    padding: 12px 23px
+    background-color: $yellow
+    border-radius: 3px
+    width: fit-content
+    position: relative
+    +font-bold
+    color: #5D636F
+    margin-left: auto
+    display: block
+    outline: none
+
+    &:hover
+        background-color: white
+        color: $blue
+
+.ajax-loader
+    display: none !important
+
+.form-safe
+    color: white
+    display: block
+    +font-size(12px)
+    position: relative
+    padding-left: 30px
+    height: fit-content
+    margin: auto auto auto 0
+
+    &::before
+        content: ''
+        position: absolute
+        left: 0px
+        top: 50%
+        transform: translateY(-50%)
+        width: 18px
+        height: 22px
+        background: url(../img/icon-safe.svg) center center / contain no-repeat
+
+
+.wpcf7-mail-sent-ok, .wpcf7-validation-errors
+    color: white !important
+    border: none !important
